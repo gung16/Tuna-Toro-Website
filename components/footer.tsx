@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const Footer = () => {
     const menuLinks = [
@@ -35,7 +36,7 @@ const Footer = () => {
 
                 {/* Logo and Description */}
                 <div className="text-start">
-                    <img src="./nav/logo.png" alt="Logo" className="w-32 mb-4 " />
+                    <Image src="/nav/logo.png" alt="Logo" width={128} height={128} className="w-32 mb-4 " />
                     <h1 className="text-3xl font-bold mb-2">Tuna Toro Bintaro</h1>
                     <p className="text-base leading-relaxed max-w-xs">
                         Kebayoran Arcade 1 Blok C1 no. 12, Jl. Boulevard Bintaro Jaya, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15220
@@ -85,7 +86,7 @@ const Footer = () => {
             <div className="lg:hidden flex flex-col items-center space-y-12">
                 {/* Logo and Description */}
                 <div className="text-center flex flex-col sm:flex-row ">
-                    <img src="./nav/logo.png" alt="Logo" className="max-w-[180px] mb-4 mx-auto object-contain" />
+                    <Image src="/nav/logo.png" alt="Logo" width={180} height={180} className="max-w-[180px] mb-4 mx-auto object-contain" />
                     <div className="text-center">
                         <h1 className="text-2xl font-bold mb-2">Tuna Toro Bintaro</h1>
                         <p className="text-base leading-relaxed max-w-xs mx-auto">
