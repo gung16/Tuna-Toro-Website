@@ -13,7 +13,7 @@ const index = () => {
       <Slider />
       <div className='flex justify-center py-5'>
         <Link
-          href={"./menu"}
+          href={"/menu"}
 
         >
           <button className=" bg-black bg-opacity-60 px-8 py-5 rounded-xl backdrop-blur-sm border-[0.15vw] text-[4vw] md:text-[2.3vw] lg:text-[1.2vw] text-white  fontPoppins font-medium flex justify-center items-center gap-3 transition-all hover:opacity-75 hover:translate-x-2">

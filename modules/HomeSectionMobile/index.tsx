@@ -52,7 +52,7 @@ const HomeSectionMobile = () => {
           </p>
           <div className="flex justify-start mt-4">
             <Link
-              href={"./about"}
+              href={"/about"}
 
             >
               <button className=" bg-black bg-opacity-60 px-4 py-3 rounded-xl backdrop-blur-sm border-[0.15vw] text-[2.3vw] text-white fontPoppins font-medium flex justify-center items-center gap-3 transition-all hover:opacity-75 hover:translate-x-2">
