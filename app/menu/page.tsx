@@ -1,8 +1,9 @@
 "use client"
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 
-const page = () => {
+const Page = () => {
   // Set the default state to "button1" and "image1" to show Image 1 on load
   const [activeButton, setActiveButton] = useState("button1");
   const [activeImage, setActiveImage] = useState("image1");
@@ -51,15 +52,19 @@ const page = () => {
       <div className="mt-4">
         {activeImage === "image1" && (
           <div className='flex flex-col justify-center items-center gap-12'>
-            <img
-              src="./menu/grill-menu.png"
+            <Image
+              src="/menu/grill-menu.png"
               alt="Tuna Toro Grill Menu"
+              width={800}
+              height={600}
               className="w-[80%]"
             />
 
-            <img
-              src="./menu/grill-img.png"
+            <Image
+              src="/menu/grill-img.png"
               alt="Tuna Toro Grill Images"
+              width={800}
+              height={600}
               className="w-[80%]"
             />
           </div>
@@ -67,15 +72,19 @@ const page = () => {
         )}
         {activeImage === "image2" && (
           <div className='flex flex-col justify-center items-center gap-12'>
-            <img
-              src="./menu/sushi-menu.png"
+            <Image
+              src="/menu/sushi-menu.png"
               alt="Tuna Toro Sushi Menu"
+              width={800}
+              height={600}
               className="w-[80%]"
             />
 
-            <img
-              src="./menu/sushi-img.png"
+            <Image
+              src="/menu/sushi-img.png"
               alt="Tuna Toro Sushi Images"
+              width={800}
+              height={600}
               className="w-[80%]"
             />
           </div>
@@ -85,4 +94,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -1,12 +1,13 @@
 import MissionSection from '@/modules/MissionSection'
 import React from 'react'
+import Image from 'next/image'
 
 const About = () => {
     return (
         <div className="min-h-screen bg-[#212121] pt-[18vh] font-poppins text-white">
             <div className="flex p-12 sm:p-24 flex-col lg:flex-row justify-center items-center space-y-10 lg:space-y-0 lg:space-x-10">
                 {/* Logo */}
-                <img src="./nav/logo.png" alt="Logo" className="w-2/3 md:w-1/2 lg:w-1/3 p-6" />
+                <Image src="/nav/logo.png" alt="Logo" width={300} height={300} className="w-2/3 md:w-1/2 lg:w-1/3 p-6" />
 
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left px-4">
                     <h2 className="text-base lg:text-xl font-medium text-white">

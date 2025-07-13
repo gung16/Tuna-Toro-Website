@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 
 const page = () => {
   return (
@@ -41,9 +42,11 @@ const page = () => {
 
         {/* Image Section */}
         <div className="w-2/5 mr-20 flex items-center justify-end">
-          <img
+          <Image
             src="/nav/logo.png"
             alt="Tuna Toro Dish"
+            width={300}
+            height={300}
             className="max-w-[68%] rounded-lg"
           />
         </div>
